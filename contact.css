@@ -1,0 +1,249 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background-image: url(BOMOKO.jpg);
+	font-family: Raleway;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	overflow: hidden;
+}
+nav{
+
+  display: flex;
+}
+nav>a{
+  display: block;
+  width: 400px;
+  background-color: rgba(0,0,0,0.2);
+  text-align: center;
+  box-sizing: border-box;
+  padding:20px;
+  color:#ff;
+  margin: 1px;
+  text-decoration: none;
+  transition:all 0.3s ease;
+}
+
+nav>a:hover{
+  background-color: rgba(255,255,255,0.4);
+  color:#000;
+  transition:all 0.3s ease;
+}
+.bloc{
+
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+
+}
+.bloc video {
+	position: absolute;
+	min-width: 100%;
+	min-height:100%;
+	top: 50%;
+	left: 50%;
+	z-index: -100;
+	transform: translate(-50%, -50%);
+
+}
+.bloc::before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 45%;
+	z-index: -99;
+
+
+}
+
+
+/*NAVIGUATEUR*/
+#NAVI>a:hover{
+	background-color: #1a415e;
+	color:white;
+	transition:all 0.3s ease;
+}
+#lab{
+
+	width: 30px;
+	height: 30px;
+	background-color: #000;
+	margin: 4px;
+	display: block;
+	display: none;
+}
+#ch{
+	display: none;
+}
+@media all and (max-width: 960px){
+	#NAVI{ 
+		display: block;
+		position: absolute;
+		left:0;
+		right:0;
+		transform:translate(-1000px,0);
+		transition: all 0.5s ease;
+		
+	}
+	#NAVI>a{
+		width: auto;
+	}
+	#ch:checked+#NAVI{
+		transform:translate(0,0);
+		transition: all 0.5s ease;	
+	}
+}
+
+#NAVI{
+
+	display: flex;
+}
+#NAVI>a{
+	display: block;
+	width: 400px;
+	background-color: rgba(0,0,0,0.2);
+	text-align: center;
+	box-sizing: border-box;
+	padding:20px;
+	color:#fff;
+	margin: 1px;
+	text-decoration: none;
+	transition:all 0.3s ease;
+}
+
+
+/*NAVIGUATEUR*/
+
+footer{
+	width: 100%;
+	height:90px;
+	bottom: 0;
+	position: absolute;
+	background-color: #0998c7;
+}
+
+#selecta{
+	width:308px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	left: 10px;
+
+}
+#selectb{
+	width:250px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	left: 20px;
+
+}
+#selectc{
+	width:250px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	left: 30px;
+}
+#selectd{
+	width:250px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	left: 40px;
+
+}
+#selecte{
+
+	display: inline-block;
+	position: relative;
+	float: left;
+	left: 40px;
+	top:5px;
+
+}
+
+form {
+	position: absolute;
+	left: 500px;
+	top: 100px;
+	background-color: rgba(58,142,186,0.2);
+	width: 400px;
+	height: 350px;
+	color: white;
+	border: 1px solid #ccc;
+	border-radius: 3em;
+}
+form div + div {
+	margin-top: 1em;
+}
+label {
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+
+}
+input, textarea {
+	font-size: 20px;
+	height: 50px;
+	width: 300px;
+	box-sizing: border-box;
+	border: 1px solid #999;
+}
+input:focus, textarea:focus {
+	border-color: #000;
+
+}
+.CHANGE{
+	width: 50px;
+	height: 20px;
+}
+textarea {
+	vertical-align: top;
+	height: 5em;
+}
+button {
+	position: absolute;
+	width: 90px;
+	height: 30px;
+	border-radius: 20px;
+	border: none;
+	color: white;
+	background-color: #1a415e;
+	bottom: 213px;
+	left: 700px;
+	transition: ease-out 0.5s;
+}
+button:hover{
+	box-shadow: 2px 5px 8px black;
+	text-align: center;
+	color: black;
+	background-color: #fcca00;
+	width: 99px;
+	height: 33px;
+}
+input {
+	border-radius: 20px;
+	opacity: 20%;
+	transition: ease-out 2s;
+}
+input:hover {
+	opacity: 60%;
+}
+textarea {
+	border-radius: 20px;
+	opacity: 20%;
+	transition: ease-out 2s;
+
+}
+textarea:hover {
+	opacity: 60%;
+}

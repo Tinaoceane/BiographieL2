@@ -1,0 +1,201 @@
+
+
+body{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background-image: url("BOMOKO.jpg");
+  font-family: Raleway;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+nav{
+
+  display: flex;
+}
+nav>a{
+  display: block;
+  width: 400px;
+  background-color: rgba(0,0,0,0.2);
+  text-align: center;
+  box-sizing: border-box;
+  padding:20px;
+  color:#fff;
+  margin: 1px;
+  text-decoration: none;
+  transition:all 0.3s ease;
+}
+
+nav>a:hover{
+  background-color: rgba(255,255,255,0.4);
+  color:#000;
+  transition:all 0.3s ease;
+}
+#lab{
+
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  margin: 4px;
+  display: block;
+  display: none;
+}
+#ch{
+  display: none;
+}
+@media all and (max-width: 960px){
+  nav{
+    display: block;
+    position: absolute;
+    left:0;
+    right:0;
+    transform:translate(-1000px,0);
+    transition: all 0.5s ease;
+    
+  }
+  nav>a{
+    width: auto;
+  }
+  #ch:checked+nav{
+    transform:translate(0,0);
+    transition: all 0.5s ease;  
+  }
+}
+
+
+table{
+
+  border: 1px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+td{
+
+  border: 1px  ;
+}
+
+.parent{
+  position: relative;
+
+}
+.child{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 99;
+  left: 550;
+
+}
+.child1{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 120;
+  left: 600;
+
+}
+.child2{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 120;
+  left: 660;
+
+}
+.child3{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 300;
+  left: 400;
+
+}
+.child4{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 550;
+  left: 770;
+
+
+}
+.child5{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 300;
+  left: 750;
+  z-index: 110;
+  
+
+}
+.child6{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 420;
+  left: 800;
+  
+
+}
+.child7{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 190;
+  left: 680;
+  
+
+}
+.child8{
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  top: 650;
+  left: 625;
+  z-index: 100;
+
+}
+.child8:hover{
+  width: 200px;
+  height: 200px;
+}
+
+#td1{
+
+  height: 240px;
+  color: red;
+  font-weight: bold;
+  font-size: 80px;
+}
+#td3{
+  
+  height: 200px;
+    background-color: rgba(0,0,0,0.2);
+  color:white;
+  text-align: left;
+}
+#commentaire{
+  position: absolute;
+  top: 760;
+  left: 9;
+}
+#commentaire1{
+  font-size:  50px;
+  font-weight: bold;
+}
+.lien{
+   text-decoration: none;
+}
+#para{
+  display: inline;
+}
+
+#image{
+  display: inline;
+}

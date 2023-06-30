@@ -1,0 +1,237 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background-image: url(bomoko.jpg);
+	font-family: Raleway;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+/*NAVIGUATEUR*/
+#NAVI>a:hover{
+	background-color: #0998c7;
+	color:#000;
+	transition:all 0.3s ease;
+}
+#lab{
+
+	width: 30px;
+	height: 30px;
+	background-color: #000;
+	margin: 4px;
+	display: block;
+	display: none;
+}
+nav{
+
+  display: flex;
+}
+nav>a{
+  display: block;
+  width: 400px;
+  background-color: rgba(0,0,0,0.2);
+  text-align: center;
+  box-sizing: border-box;
+  padding:20px;
+  color:#fff;
+  margin: 1px;
+  text-decoration: none;
+  transition:all 0.3s ease;
+}
+
+nav>a:hover{
+  background-color: rgba(255,255,255,0.4);
+  color:#000;
+  transition:all 0.3s ease;
+}
+#ch{
+	display: none;
+}
+@media all and (max-width: 960px){
+	#NAVI{ 
+		display: block;
+		position: absolute;
+		left:0;
+		right:0;
+		transform:translate(-1000px,0);
+		transition: all 0.5s ease;
+		
+	}
+	#NAVI>a{
+		width: auto;
+	}
+	#ch:checked+#NAVI{
+		transform:translate(0,0);
+		transition: all 0.5s ease;	
+	}
+}
+
+#NAVI{
+
+	display: flex;
+}
+#NAVI>a{
+	display: block;
+	width: 400px;
+	background-color: rgba(0,0,0,0.2);
+	text-align: center;
+	box-sizing: border-box;
+	padding:20px;
+	color:#fff;
+	margin: 1px;
+	text-decoration: none;
+	transition:all 0.3s ease;
+}
+
+
+/*NAVIGUATEUR*/
+#sider{
+	width:263px;
+	height:200px;
+	position: relative;
+	top:0px;
+}
+#sectiona{
+	width:308px;
+	height:468px;
+	float: left;
+	display: inline-block;
+	position: relative;
+	left: 10px;
+	background-color: white;
+
+}
+#opacity{
+	width:163px;
+	height:51px;
+	display: inline-block;
+	position: relative;
+	bottom: 90px;
+	left: 100px;
+	opacity: 100%;
+	transition:all 0.5s ease;
+}
+#opacity2{
+	width:163px;
+	height:51px;
+	display: inline-block;
+	position: relative;
+	left: 120px;
+	bottom: 90px;
+	opacity: 100%;
+	transition:all 0.5s ease;
+}
+#opacity2:hover{
+	bottom: 70px;
+	transition:all 0.5s ease;
+}
+#box{
+	display: inline;
+}
+#opacity:hover{
+	bottom: 70px;
+	transition:all 0.5s ease; 
+}
+#sectionb{
+	display: inline-block;
+	width:550px;
+	height:468px;
+	float: left;
+	position: relative;
+	left: 20px;
+	background-image: url(../IMAGES/BACK.png);
+	
+
+}
+#sectionc{
+	display: inline-block;
+	width:308px;
+	height:468px;
+	position: relative;
+	left: 30px;
+	background-color: white;
+}
+#scroll{
+	overflow: scroll;
+	width:308px;
+	height:250px;
+
+}
+footer{
+	width: 100%;
+	height:110px;
+	bottom: 0;
+	background-color: #0998c7;
+}
+
+#selecta{
+	width:308px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	left: 10px;
+
+}
+#selectb{
+	width:250px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	left: 20px;
+
+}
+#selectc{
+	width:250px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	left: 30px;
+}
+#selectd{
+	width:250px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	left: 40px;
+
+}
+#selecte{
+
+	display: inline-block;
+	position: relative;
+	float: left;
+	left: 40px;
+	top: -2px;
+
+}
+@media screen and (min-width:768px) and (max-width: 1024px){
+
+	body{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background-image: url(../IMAGES/FOND.jpg);
+	font-family: Raleway;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+#sectiona{
+	width:108px;
+	height:268px;
+	float: left;
+	display: inline-block;
+	position: relative;
+	left: 10px;
+	background-color: white;
+
+}
+}
